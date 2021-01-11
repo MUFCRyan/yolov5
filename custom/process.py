@@ -20,7 +20,7 @@ def split():
         return
     test_images_files = os.listdir(test_image_path)
     train_anno_files = os.listdir(train_anno_path)
-    split = 0.2 #取 10% 为验证集
+    split = 0.1 #取 10% 为验证集
     test_count = len(test_images_files)
     train_count = len(train_anno_files)
     split_count = int((train_count + test_count) * split)
